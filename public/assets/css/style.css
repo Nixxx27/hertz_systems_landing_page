@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.page-wrapper, .page-titles{
+	background: white !important;
+}
+
+.text-themecolor
+{
+    font-weight: bold !important;
+    color: #868e96  !important;
+}
+.hertz-required-fields{
+    color: red;
+    font-weight: bold !important;
+}
+
+.bg-info, .btn-info {
+    background: #0c57a1 !important;
+}
+
+.text-themecolor
+
+.btn-info
+{
+    border:1px solid #0c57a1 !important;
+}
+
+@media (min-width: 768px)
+{
+    .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a {
+        width: 290px;
+        background: white  !important;
+        border: 1px solid #0c57a1 !important;
+    }
+}
+
+
+.sidebar-nav ul li a {
+    background: white  !important;
+    text-decoration: none !important;
+
+}
+
+
+.sidebar-nav ul li a.active, .sidebar-nav ul li a:hover {
+    color: #555e75 !important;
+}
+
+.sidebar-nav ul li a.active i, .sidebar-nav ul li a:hover i {
+    color: #555e75  !important;
+}
+
+.topbar {
+    background-image: url( '../assets/image/bg-transparent-corp1.png') !important;
+    background-color: #343a40;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 5%) !important;
+}
+
+
+.btn-continue {
+    box-sizing: border-box;
+    background: #005EB8;
+    display: block;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 12px 55px;
+      font-size: 18px;
+    float: right;
+}
+
+.ti-menu
+{
+    color: #e9ecef !important;
+}
+
+.breadcrumb-item > a{
+    text-decoration: none !important;
+    color: #555e75 !important;
+    font-weight: bold !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    border: 1px solid #495057 !important;
+    background-color: #495057 !important;
+}
+
+
+.sidebar-nav > ul > li.active > a {
+    color: #495057 !important;
+    border-color: #495057 !important;
+}
+
+.collapse.in {
+    display: block !important; }
+    
+.modal-header-bg{
+    background-image: url("https://corporate.hertzphilippines.com/img/Hertz_BG.jpg");
+    background-size: cover;
+    background-position: 25% 72%;
+    position: relative;
+}
+
+.modal-header-bg::before {
+	content: "";
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	background-color: rgba(49, 48, 48, 0.8); /* Adjust the alpha value to change the tint color */
+}
+
+.select2-search__field {
+    border: 1px solid !important;
+    border-radius: 4px !important;
+}
+
+.select2-container--default .select2-results>.select2-results__options {
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 9pt;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    /* display: none; */
+    border-radius: 5px;
+    margin: 0 5px 0 1px;
+    margin-top: -1px;
+  }
+
+.booking-loader-notification{
+    display: none; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(255, 255, 255, 0.5); 
+    z-index: 9999; 
+    text-align: center; 
+    padding-top: 20%; 
+    backdrop-filter: blur(1px);
+}
+
+/* CUSTOM CSS FOR SELECT TAG ELEMENT READONLY */
+.select-readonly{
+    pointer-events: none;
+}
+
+
+/* Passenger CSS */
+@keyframes slideIn {
+from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-slideIn {
+    animation: slideIn 0.5s ease-out;
+}
+  
+.passenger-card {
+    margin-bottom: 1rem;
+}
+.passenger-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    transition: box-shadow 0.3s ease;
+}
+.passenger-card-hover:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+  /* Card Header and Toggle Buttons */
+.card-header {
+    background-color: #f9f9f9;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+.passenger-toggle .toggle-btn {
+    background: transparent;
+    border: none;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #666;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    margin-right: 8px;
+}
+.passenger-toggle .toggle-btn.active {
+    background: #007bff;
+    color: #fff;
+}
+.btn-close.remove-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.btn-close.remove-btn:hover {
+    color: #000;
+}
+.passenger-toggle .active {
+    background-color: #fdd109 !important;
+    color: #353232 !important;
+}
+.passenger-details-container {
+    border-bottom: 5px solid #fdd109;
+}
+.card-display-rounded{
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 1rem;
+}
+.passenger-form-container {
+    overflow-y: hidden;
+    max-height: 600px;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #c1c1c1 transparent; /* For Firefox */
+}
+
+.passenger-form-container:hover {
+    overflow-y: auto;
+}
+
+.passenger-form-container::-webkit-scrollbar {
+    width: 6px; /* For WebKit browsers like Chrome, Safari */
+}
+
+.passenger-form-container::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 3px;
+}
+
+.passenger-form-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.passenger-form-container::-ms-overflow-style {
+    scrollbar-color: #c1c1c1 transparent; /* For Edge (modern versions) */
+}
+
+@media (max-width: 768px) {
+    .passenger-form-container {
+        overflow-y: auto;
+    }
+}
