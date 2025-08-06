@@ -507,7 +507,7 @@
                         <a href="https://drivers.exclusivecars.ph" role="button" class="col-lg-3 col-md-6 mb-4 text-decoration-none">
                             <div class="system-card fade-in d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Drivers Portal App</h3>
-                                <span class="status-badge"></span>
+                                <span class="status-badge d-flex align-items-center gap-1"></span>
                             </div>
                         </a>
 

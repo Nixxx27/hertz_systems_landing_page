@@ -55,6 +55,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('systems_page');
+    return view('systems_page_one');
 });
 

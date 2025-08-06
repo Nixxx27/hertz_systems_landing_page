@@ -6,6 +6,7 @@
     <title>Systems Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         :root {
             --primary-yellow: #FFCC00;
@@ -52,14 +53,34 @@
             color: var(--primary-yellow) !important;
         }
 
+        .curved-bg-white {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 50px; /* Adjusted for better visual */
+            background-color: white;
+            border-top-left-radius: 50%;
+            transform: translateY(50%);
+            z-index: 1;
+        }
+
+
         .hero-section {
-            background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
-            color: var(--white);
-            padding: 8rem 0 6rem;
+            background-color: #1a1a1a;
+            height: 250px;
             position: relative;
             overflow: hidden;
-            border-bottom-right-radius: 300px;
-            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 200px;
+            }
         }
 
         .hero-section::before {
@@ -79,9 +100,9 @@
         }
 
         .hero-title {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
+            margin: 1rem;
             line-height: 1.2;
         }
 
@@ -135,13 +156,12 @@
         }
 
         .system-card {
-            background: var(--white);
+            /* background: var(--white); */
+            background: linear-gradient(135deg, rgba(255, 254, 0, 0.1), rgba(255, 228, 218, 0.1));
             border-radius: 15px;
-            border-bottom: 8px solid #FFCC00;
-            border-top: 2px solid transparent;
-            border-right: 2px solid transparent;
-            border-left: 2px solid transparent;
+            height: 100vh;
             padding: 1rem;
+            border: none;
             margin-bottom: 2rem;
             box-shadow: 0 5px 25px rgba(0,0,0,0.08);
             transition: all 0.3s ease;
@@ -155,20 +175,26 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
+            /* height: 4px; */
             background: var(--primary-yellow);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
 
-        .system-card:hover {
+
+        .system-card:hover{
             transform: translateY(-10px);
             box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-            border-color: var(--primary-yellow);
-            height: 100vh;
+            /* background: linear-gradient(135deg, rgba(255, 254, 0, 0.1), rgba(255, 228, 218, 0.1)); */
+            opacity: 1;
+            /* height: 100vh; */
              transition: all 0.3s ease;
              z-index: 1;
         }
+
+        .blue-theme:hover .card-glow {
+  
+}
 
         .system-card:hover::before {
             transform: scaleX(1);
@@ -298,18 +324,39 @@
             width: 180px;
         }
 
+        .icon{
+            height: 62px;
+            width: 180px;
+        }
+
         @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2.5rem;
+
+            .icon{
+            height: 35px;
+            width: 100px;
+        }
+            .hero-section h2 {
+                font-size: 20px;
+                margin-bottom: 1rem;
             }
-            
-            .hero-subtitle {
-                font-size: 1.1rem;
+
+            .hero-section h3 {
+                font-size: 40px;
+                margin-bottom: 0.5rem;
             }
-            
-            .system-stats {
-                flex-direction: column;
-                gap: 1rem;
+
+                .hero-section p {
+                font-size: 0.5rem;
+            }
+
+            .system-title{
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .hero-section h1 {
+                font-size: 4rem;
             }
         }
 
@@ -355,30 +402,22 @@
 }
 
 .portal-list {
-  max-height: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  background-color: var(--white);
+  max-height: none;
+  opacity: 1;
+  visibility: visible;
+  background-color: none;
   border-radius: 0.25rem;
-  padding: 0; /* Initial padding */
+  padding: 0.75rem; /* Show padding by default */
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  transform: none;
+  z-index: 1;
 }
 
-.system-card:hover .portal-list,
-.system-card.active .portal-list {
-  max-height: 200px; /* Adjust as needed based on number of portals */
-  opacity: 1;
-  visibility: visible;
-  padding: 0.75rem; /* Padding when visible */
-  transform: scale(1.05);
-  z-index: 2;
-}
 
 .btn-portal {
-  width: 100%;
+  width: 75%;
   text-align: center;
   color: var(--black);
   border: none;
@@ -390,20 +429,20 @@
             margin-bottom: 2rem;
             box-shadow: 0 5px 25px rgba(0,0,0,0.08);
             transition: all 0.3s ease;
-            border: 2px solid transparent;
-}
-
-.btn-portal:last-child {
-  border-bottom: none; /* No border for the last item */
+            border-bottom: 5px solid #FFCC00;
+            border-top: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-left: 2px solid transparent;
 }
 
 .btn-portal:hover {
-  background-color: rgba(255, 204, 0, 0.8); 
-  border-color: rgba(255, 204, 0, 0.8); /* Match border color on hover */
+    border-top: 5px solid rgba(255, 204, 0, 0.8);
+    border-right: 2px solid rgba(255, 204, 0, 0.8);
+    border-left: 2px solid rgba(255, 204, 0, 0.8);
 }
 
 .btn-portal:active {
-  background-color: rgba(255, 204, 0, 0.8); /* Slightly darker yellow on active */
+  background-color: rgba(255, 204, 0, 0.8);
   color: var(--black);
   border-color: rgba(255, 204, 0, 0.8);
 }
@@ -411,7 +450,7 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <i class="fas fa-server me-2" style="color: var(--primary-yellow);"></i>
@@ -421,48 +460,48 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <h3 class="hero-title fade-in" style="font-size: 65px;">Lower emissions, not standards.</h3>
-                        <h1 class="hero-title fade-in" style="color: #FFCC00; font-size: 80px;">Let's Go!</h1>
-                        <p class="hero-subtitle fade-in">.</p>
-                        <button class="btn btn-primary-custom fade-in" onclick="scrollToSection('systems')">
-                            Explore Systems
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="text-center fade-in">
-                        
-                    </div>
-                </div>
+     <section id="home" class="hero-section">
+        <div class="grid-overlay"></div>
+        <div class="curved-bg-white"></div>
+
+        <div class="container py-3 position-relative z-2">
+
+            <div class="text-center">
+            <img class="icon" src="/img/Hertz_Primary_logo_White_Yellow_Line_RGB.png" alt="Icon">
+            <h2 class="hero-title fade-in" style="color: #FFCC00;">Systems Landing Page</h2>
+            <p class="text-light fade-in">Explore and access all internal and partner systems in one place. 
+               Use this page as a centralized dashboard to quickly navigate to the tools and platforms relevant to your role.</p>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="systems" class="features-section">
+    <section id="systems" class="features-section p-1">
         
         
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-12 d-flex justify-content-center mb-5">
-                    <h1>Explore Systems</h1>
+                <div class="col-12 d-flex justify-content-end mb-5">
+                    <button class="btn btn-primary-custom fade-in w-auto h-100" type="button" style="border-radius: 15px;" data-bs-toggle="modal" data-bs-target="#addSystemModal" aria-label="Add System">
+                        <div class="d-flex align-items-center">
+                        <span style="font-size: 12px;">Add System</span>                        
+                        <i class='bx bx-plus pl-3' style='color:#434244'  ></i></div>
+                        </button>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card system-card fade-in " id="category-internal">
+                @include('modal/add_system_modal')
+
+                <div class="col-12 col-md-6 col-lg-4">
+                <div class="card system-card yellow-theme fade-in h-auto" id="category-internal">
+                    <div class="card-glow"></div>
                     <div class="card-body d-flex flex-column align-items-center text-center">
                         <div class="card-header-content">
                             <h5 class="card-title text-black">Internal System</h5>
                         </div>
-                        <div class="portal-list mt-1 w-100">
+                        <div class="d-flex align-items-center portal-list mt-1 w-100">
                             <a href="https://admin360.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
                                 <div class="d-flex align-items-center justify-content-between p-3">
                                     <h3 class="system-title mb-0">Admin System</h3>
@@ -533,13 +572,13 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card system-card fade-in" id="category-partners">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card system-card fade-in h-auto" id="category-partners">
                     <div class="card-body d-flex flex-column align-items-center text-center">
                         <div class="card-header-content">
                             <h5 class="card-title text-black">Client & Partners System</h5>
                         </div>
-                        <div class="portal-list mt-1 w-100">
+                        <div class="d-flex align-items-center portal-list mt-1 w-100">
                             <a href="https://dsar.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">DSAR</h3>
@@ -587,13 +626,13 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                <div class="card system-card fade-in" id="category-website">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card system-card fade-in h-auto" id="category-website">
                     <div class="card-body d-flex flex-column align-items-center text-center">
                         <div class="card-header-content">
                             <h5 class="card-title text-black">Website Platforms & API</h5>
                         </div>
-                        <div class="portal-list mt-1 w-100">
+                        <div class="d-flex align-items-center portal-list mt-1 w-100">
                             <a href="" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Hertz Website</h3>
@@ -642,14 +681,14 @@
     <footer class="pt-0 footer">
         <div class="footer-curve my-5" style="border-radius: 0px 0px 80px 80px; background-color: #FFFFFF; height: 120px;"></div>
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12">
                     <div class="d-flex justify-content-center">
                     <img class="logo" src="/img/Hertz_Primary_Logo_White_Yellow_Line_RGB.png" alt="hertz-logo">
                     </div>
                     <h5 class="pt-3 d-flex justify-content-center" style="color: var(--primary-yellow);">Systems Landing Page</h5>
                 </div>
-            </div>
+            </div> -->
             <hr style="border-color: var(--medium-gray); margin: 2rem 0 1rem;">
             <div class="text-center">
                 <p class="text-light">Copyright © 2025 Hertz Philippines. All rights reserved.</p>
@@ -761,14 +800,11 @@
         });
     </script>
     <script>
-   document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const categoryCards = document.querySelectorAll(".system-card");
   const portalButtons = document.querySelectorAll(".btn-portal");
-  const activeCardsByCategory = {}; // Stores active card per category (by ID)
 
   categoryCards.forEach((card) => {
-    const categoryId = card.getAttribute("id"); // Get ID of the card as category ID
-
     // Handle hover animation
     card.addEventListener("mouseenter", function () {
       card.classList.add("hover");
@@ -776,37 +812,11 @@
     });
 
     card.addEventListener("mouseleave", function () {
-      // Only remove 'hover' if it's not the active card in its category
-      if (activeCardsByCategory[categoryId] !== card) {
-        card.classList.remove("hover");
-      }
+      card.classList.remove("hover");
       card.style.transform = "translateY(0) scale(1)";
     });
 
-    // Handle click (pressed) state
-    card.addEventListener("click", (event) => {
-      // Allow link inside to behave normally
-      if (event.target.classList.contains("btn-portal") || event.target.closest(".btn-portal")) {
-        return;
-      }
-
-      const activeCard = activeCardsByCategory[categoryId];
-
-      if (activeCard === card) {
-        // If the same card is clicked again, deactivate it
-        card.classList.remove("active", "hover");
-        activeCardsByCategory[categoryId] = null;
-      } else {
-        // Deactivate previous card in this category
-        if (activeCard) {
-          activeCard.classList.remove("active", "hover");
-        }
-
-        // Activate the new one
-        card.classList.add("active", "hover");
-        activeCardsByCategory[categoryId] = card;
-      }
-    });
+    // Removed the click (pressed) state logic
   });
 
   // Handle hover animations for .btn-portal elements too
@@ -820,7 +830,6 @@
     });
   });
 });
-
-    </script>
+</script>
 </body>
 </html>
