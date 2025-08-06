@@ -493,21 +493,21 @@
                             <h5 class="card-title text-black">Internal System</h5>
                         </div>
                         <div class="d-flex align-items-center portal-list mt-1 w-100">
-                            <a href="https://admin360.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
+                            <a href="https://admin360.exclusivecars.ph" target="_blank" role="button" class="text-decoration-none btn-portal">
                                 <div class="d-flex align-items-center justify-content-between p-3">
                                     <h3 class="system-title mb-0">Admin System</h3>
                                     <span class="status-badge status-online">&rarr;</span>
                                 </div>
                         </a>
                         
-                            <a href="" role="button" class="text-decoration-none btn-portal">
+                            <a href="" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Employee</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
 
-                        <a href="https://drivers.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
+                        <a href="https://drivers.exclusivecars.ph" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Drivers Portal App</h3>
                                 <span class="status-badge status-online">&rarr;</span>
@@ -515,28 +515,28 @@
                         </a>
 
 
-                        <a href="" role="button" class="text-decoration-none btn-portal">
+                        <a href="" role="button" target="_blank" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Employee</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
 
-                        <a href="" role="button" class="text-decoration-none btn-portal">
+                        <a href="" role="button" target="_blank" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">HRIS</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
 
-                        <a href="https://fleetservice.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
+                        <a href="https://fleetservice.exclusivecars.ph" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Fleet Service</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
                         
-                        <a href="" role="button" class="text-decoration-none btn-portal">
+                        <a href="" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">MCKINSEY</h3>
                                 <span class="status-badge status-online">&rarr;</span>
@@ -544,14 +544,14 @@
                         </a>
 
 
-                        <a href="https://dsar-corporate.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
+                        <a href="https://dsar-corporate.exclusivecars.ph" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">DSAR-Corporate</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
 
-                        <a href="https://support.exclusivecars.ph/" role="button" class="text-decoration-none btn-portal">
+                        <a href="https://support.exclusivecars.ph/" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Ticketing System</h3>
                                 <span class="status-badge status-online">&rarr;</span>
@@ -570,42 +570,42 @@
                             <h5 class="card-title text-black">Third-Party Systems</h5>
                         </div>
                         <div class="d-flex align-items-center portal-list mt-1 w-100">
-                            <a href="https://dsar.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
+                            <a href="https://dsar.exclusivecars.ph" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">DSAR</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
 
-                        <a href="https://ghd.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
+                        <a href="https://ghd.exclusivecars.ph" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">GHD</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
                         
-                        <a href="https://partners.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
+                        <a href="https://partners.exclusivecars.ph" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Partners System</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
 
-                        <a href="https://slmc.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
+                        <a href="https://slmc.exclusivecars.ph" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">SLMC</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
 
-                         <a href="https://track.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
+                         <a href="https://track.exclusivecars.ph" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Track</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
                         
-                        <a href="" role="button" class="text-decoration-none btn-portal">
+                        <a href="" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Hertz Collection</h3>
                                 <span class="status-badge status-online">&rarr;</span>
@@ -624,14 +624,14 @@
                             <h5 class="card-title text-black">Website Platforms & API</h5>
                         </div>
                         <div class="d-flex align-items-center portal-list mt-1 w-100">
-                            <a href="" role="button" class="text-decoration-none btn-portal">
+                            <a href="" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Hertz Website</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
                         
-                        <a href="" role="button" class="text-decoration-none btn-portal">
+                        <a href="" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Thrifty Website</h3>
                                 <span class="status-badge status-online">&rarr;</span>
@@ -639,21 +639,21 @@
                         </a>
 
 
-                        <a href="https://api.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
+                        <a href="https://api.exclusivecars.ph" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">Hertz API</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
 
-                        <a href="" role="button" class="text-decoration-none btn-portal">
+                        <a href="" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">GO HERTZPHILIPPINES</h3>
                                 <span class="status-badge status-online">&rarr;</span>
                             </div>
                         </a>
 
-                        <a href="" role="button" class="text-decoration-none btn-portal">
+                        <a href="" target="_blank" role="button" class="text-decoration-none btn-portal">
                             <div class="d-flex align-items-center justify-content-between p-3">
                                 <h3 class="system-title mb-0">HERTZPHILIPPINES PH</h3>
                                 <span class="status-badge status-online">&rarr;</span>
@@ -818,6 +818,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     btn.addEventListener("mouseleave", function () {
       btn.style.transform = "translateY(0) scale(1)";
+    });
+  });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const portalButtons = document.querySelectorAll(".btn-portal");
+
+  portalButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault(); // Prevent default link behavior
+      const url = btn.getAttribute("href");
+      if (url) {
+        window.open(url, "_blank"); // Open in new tab
+      }
     });
   });
 });
