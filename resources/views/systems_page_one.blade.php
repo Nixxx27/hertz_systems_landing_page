@@ -470,7 +470,7 @@
         <div class="container py-3 position-relative z-2">
 
             <div class="text-center">
-            <img class="icon" src="/img/Hertz_Primary_logo_White_Yellow_Line_RGB.png" alt="Icon">
+            <img class="icon fade-in" src="/img/Hertz_Primary_logo_White_Yellow_Line_RGB.png" alt="Icon">
             <h2 class="hero-title fade-in" style="color: #FFCC00;">Systems Landing Page</h2>
             <p class="text-light fade-in">Explore and access all internal and partner systems in one place. 
                Use this page as a centralized dashboard to quickly navigate to the tools and platforms relevant to your role.</p>
