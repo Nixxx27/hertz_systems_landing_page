@@ -54,12 +54,12 @@
         }
 
         .curved-bg-white {
+            background: #f8f9fa;
             position: absolute;
             bottom: 0;
             right: 0;
             width: 100%;
             height: 50px; /* Adjusted for better visual */
-            background-color: white;
             border-top-left-radius: 50%;
             transform: translateY(50%);
             z-index: 1;
