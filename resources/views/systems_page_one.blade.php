@@ -567,7 +567,7 @@
                 <div class="card system-card fade-in h-auto" id="category-partners">
                     <div class="card-body d-flex flex-column align-items-center text-center">
                         <div class="card-header-content">
-                            <h5 class="card-title text-black">Client & Partners System</h5>
+                            <h5 class="card-title text-black">Third-Party Systems</h5>
                         </div>
                         <div class="d-flex align-items-center portal-list mt-1 w-100">
                             <a href="https://dsar.exclusivecars.ph" role="button" class="text-decoration-none btn-portal">
