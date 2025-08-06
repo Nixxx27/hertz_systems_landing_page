@@ -484,15 +484,6 @@
         
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex justify-content-end mb-5">
-                    <button class="btn btn-primary-custom fade-in w-auto h-100" type="button" style="border-radius: 15px;" data-bs-toggle="modal" data-bs-target="#addSystemModal" aria-label="Add System">
-                        <div class="d-flex align-items-center">
-                        <span style="font-size: 12px;">Add System</span>                        
-                        <i class='bx bx-plus pl-3' style='color:#434244'  ></i></div>
-                        </button>
-                </div>
-
-                @include('modal/add_system_modal')
 
                 <div class="col-12 col-md-6 col-lg-4">
                 <div class="card system-card yellow-theme fade-in h-auto" id="category-internal">
